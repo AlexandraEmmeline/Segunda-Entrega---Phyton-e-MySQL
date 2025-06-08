@@ -8,15 +8,3 @@ CREATE TABLE Manifestacoes (
     Tipo VARCHAR(30) NOT NULL,
     PRIMARY KEY (Codigo)
 );
-
-INSERT INTO Manifestacoes (Titulo, Descricao, Autor, Tipo)
-VALUES 
-('Demora no atendimento', 'Esperei mais de 30 minutos para ser atendido.', 'João Silva', 'Reclamação');
-
-INSERT INTO Manifestacoes (Titulo, Descricao, Autor, Tipo)
-VALUES 
-('Ótimo atendimento', 'Gostaria de parabenizar a equipe pelo excelente atendimento.', 'Maria Oliveira', 'Elogio');
-
-INSERT INTO Manifestacoes (Titulo, Descricao, Autor, Tipo)
-VALUES 
-('Sugestão de melhoria', 'Seria interessante ampliar o horário de atendimento.', 'Carlos Souza', 'Sugestão');
