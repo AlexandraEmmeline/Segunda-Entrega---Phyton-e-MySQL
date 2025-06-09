@@ -1,7 +1,9 @@
 # SISTEMA DE OUVIDORIA COM MYSQL - SEGUNDA ENTREGA (PYTHON)
 from operacoesbd import *
-conexao = criarConexao("127.0.0.1", "root", "1234567",
-                       "sistema_de_ouvidoria_bd")
+from todosOsMetodosMenu import *
+
+
+conexao = criarConexao("127.0.0.1", "root", "1234567", "bd_sistema_ouvidoria")
 
 menu = 0
 
@@ -25,24 +27,24 @@ while menu != 7:
         continue
 
     if menu == 1:
-        print("Listar todas as manifestações")
+        listarManifestacoes(conexao)
 
     elif menu == 2:
-        print("Listar manifestações por tipo")
+        listarManifestacoesPorTipo(conexao)
 
     elif menu == 3:
-        print("Criar nova manifestação")
+        criarNovaManifestacao(conexao)
 
     elif menu == 4:
-        print("Exibir quantidade de manifestações")
+        exibirQuantidade(conexao)
 
     elif menu == 5:
-        print("Pesquisar manifestação por código")
+        pesquisarPorCodigo(conexao)
 
     elif menu == 6:
-        print("Excluir manifestação pelo código")
+        excluirPeloCodigo(conexao)
 
-    elif menu != 6:
+    elif menu != 7:
         print("⚠️  Opção inválida. Escolha uma das opções listadas acima!")
 
 
