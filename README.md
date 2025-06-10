@@ -26,5 +26,5 @@ Este é um projeto de um **Sistema de Ouvidoria** desenvolvido em Python, utiliz
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/sistema-ouvidoria.git
+   git clone https://github.com/AlexandraEmmeline/Segunda-Entrega---Phyton-e-MySQL
    cd sistema-ouvidoria
